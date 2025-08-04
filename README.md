@@ -1,6 +1,4 @@
 
-
-```md
 # JobConnect Pro — Enterprise Job Portal Platform
 
 JobConnect Pro is a full-featured recruitment system built with the MERN stack. It enables job seekers to discover and apply for jobs, while employers can post listings, manage applications, and hire efficiently.
