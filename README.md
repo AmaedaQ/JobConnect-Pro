@@ -128,5 +128,5 @@ MIT License
 ```
 
 
-Let me know, and I’ll generate them in the same clean, no-fluff style.
+
 ```
