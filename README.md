@@ -1,67 +1,64 @@
 
-# JobConnect Pro — Enterprise Job Portal Platform
+<h1 align="center">💼 JobConnect Pro — Enterprise Recruitment Platform</h1>
 
-JobConnect Pro is a full-featured recruitment system built with the MERN stack. It enables job seekers to discover and apply for jobs, while employers can post listings, manage applications, and hire efficiently.
+<p align="center">
+  <strong>Production-grade job portal built on the MERN stack</strong><br/>
+  Scalable architecture, role-based access, real-time messaging, and AI-assisted job matching.
+</p>
 
----
-
-## Overview
-
-This platform offers secure role-based authentication, smart job matching, real-time messaging, and document uploads. It supports the full recruitment lifecycle with a modular, scalable architecture.
-
----
-
-## Architecture
-
-- MERN stack following MVC pattern
-- RESTful API with Express.js
-- JWT authentication with refresh token support
-- Cloudinary for media/document handling
-- Socket.io for real-time communication
+<p align="center">
+  <a href="https://mern.io"><img src="https://img.shields.io/badge/Stack-MERN-4DB33D?logo=mongodb&logoColor=white" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>
+  <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-18+-339933?logo=node.js&logoColor=white" /></a>
+  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-18+-61DAFB?logo=react&logoColor=white" /></a>
+</p>
 
 ---
 
-## Features
+## 🚀 Core Features
 
-- Advanced job search with dynamic filters
-- Role-based dashboards for job seekers and employers
-- Job application tracking system
-- Real-time chat between employers and candidates
-- Resume upload and parsing with skill matching
-
----
-
-## Tech Stack
-
-- **Frontend:** React.js, Redux, Tailwind CSS  
-- **Backend:** Node.js, Express.js, MongoDB  
-- **Authentication:** JWT (access + refresh)  
-- **Media Handling:** Cloudinary  
-- **Real-Time:** Socket.io
+- 🔍 **Smart Job Matching** — Skill-based ranking and filters  
+- 👥 **Role-Based Dashboards** — Separate flows for employers and candidates  
+- 💬 **Real-Time Chat** — Powered by Socket.io  
+- 📄 **Resume Management** — Upload, parse, and match via Cloudinary  
+- 🔐 **Secure Auth** — JWT (access + refresh) with middleware protection  
 
 ---
 
-## Highlights
+## 🧩 System Overview
 
-- Built real-time messaging using Socket.io  
-- Integrated secure resume uploads via Cloudinary  
-- Designed job-matching algorithm tested across 50+ mock listings  
-- Presented working prototype with positive technical feedback
+| Layer | Stack |
+|-------|-------|
+| Frontend | React 18, Redux, Tailwind CSS |
+| Backend | Node.js, Express.js (MVC pattern) |
+| Database | MongoDB (Mongoose ORM) |
+| Auth | JWT Tokens |
+| Real-Time | Socket.io |
+| Media | Cloudinary |
 
 ---
 
-## Project Structure
+## 🏗 Highlights
+
+- Engineered real-time messaging with **Socket.io**  
+- Integrated secure resume handling with **Cloudinary**  
+- Built modular job-matching engine tested on 50+ sample listings  
+- Delivered fully containerized, **scalable MERN** architecture  
+
+---
+
+## 📁 Project Structure
 
 ```
 
 jobconnect-pro/
-├── client/               # React frontend
+├── client/           # React frontend
 │   └── src/
 │       ├── components/
 │       ├── pages/
 │       ├── redux/
 │       └── App.js
-├── server/               # Express backend
+├── server/           # Express backend
 │   ├── controllers/
 │   ├── models/
 │   ├── routes/
@@ -73,30 +70,21 @@ jobconnect-pro/
 
 ---
 
-## Setup Instructions
-
-### 1. Clone the Repository
+## ⚙️ Setup
 
 ```bash
+# Clone repository
 git clone https://github.com/AmaedaQ/job-portal.git
 cd job-portal
+
+# Install dependencies
+cd server && npm install
+cd ../client && npm install
 ````
 
-### 2. Install Dependencies
+### 🔧 Environment Variables
 
-```bash
-# Backend
-cd server
-npm install
-
-# Frontend
-cd ../client
-npm install
-```
-
-### 3. Environment Variables
-
-Create a `.env` file in the `/server` directory:
+Create a `.env` file inside `/server`:
 
 ```env
 PORT=5000
@@ -107,26 +95,20 @@ CLOUDINARY_API_KEY=your_api_key
 CLOUDINARY_API_SECRET=your_api_secret
 ```
 
-### 4. Run Development Servers
+### ▶️ Run Application
 
 ```bash
-# Start backend
-cd server
-npm run dev
+# Backend
+cd server && npm run dev
 
-# Start frontend
-cd ../client
-npm start
+# Frontend
+cd ../client && npm start
 ```
 
 ---
 
-## License
+## 📜 License
 
-MIT License
-
-```
+MIT © Amaeda Qureshi
 
 
-
-```
